@@ -1,17 +1,5 @@
 <script lang="ts">
-  import { next } from '../stores/stepStore';
-  import { setNVDA, setVoiceover } from '../stores/screenReaderStore';
-
-  function onVoiceover(): void {
-    setVoiceover();
-    next();
-  }
-
-  function onNVDA(): void {
-    setNVDA();
-    next();
-  }
-
+  import { Router, Link } from "svelte-navigator";
 </script>
 
 <style>
@@ -21,7 +9,7 @@
 <div>
   <h1>Pick a screen reader</h1>
   <ul>
-    <li><button on:click={onVoiceover}>Voiceover</button></li>
-    <li><button on:click={onNVDA}>NVDA Windows</button></li>
+    <li><Link to="start/Voiceover">Voiceover</Link></li>
+    <li><Link  to="start/NVDA">NVDA</Link></li>
   </ul>
 </div>
