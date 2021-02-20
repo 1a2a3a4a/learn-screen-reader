@@ -1,18 +1,20 @@
 <script lang="ts">
   import { Router, Route, Link } from "svelte-navigator";
-  import Voiceover from './VoiceOver.svelte';
-  import NVDA from './NVDA.svelte';
+  import Voiceover from "./VoiceOver.svelte";
+  import NVDA from "./NVDA.svelte";
 </script>
 
-<style>
-
-</style>
-
 <div>
-<Route path="Voiceover" component="{Voiceover}"/>
-<Route path="NVDA" component="{NVDA}"/>
-<h1>Mercury</h1>
-<h2>Venus</h2>
-<h3>Mars</h3>
-<h4>Tellus</h4>
+  <h1>Navigate headings</h1>
+  <Router primary={false}>
+    <Route path="Voiceover" component={Voiceover} />
+    <Route path="NVDA" component={NVDA} />
+  </Router>
+  <h2>Mercury</h2>
+  <h3>Venus</h3>
+  <h4>Mars</h4>
+  <h5>Tellus</h5>
 </div>
+
+<style>
+</style>

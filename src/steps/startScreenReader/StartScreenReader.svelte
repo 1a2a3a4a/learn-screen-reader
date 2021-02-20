@@ -10,6 +10,8 @@
 
 <div>
   <h1>Here is how to start your screenreader</h1> 
-  <Route path="Voiceover" component="{Voiceover}"/>
-  <Route path="NVDA" component="{NVDA}"/>
+  <Router primary={false}>
+    <Route path="Voiceover" component="{Voiceover}"/>
+    <Route path="NVDA" component="{NVDA}"/>
+  </Router>
 </div>

@@ -1,22 +1,27 @@
 <script>
-  import { next, prev } from '../stores/stepStore';
+  import { Router, Link } from "svelte-navigator";
+  import { useLocation } from "svelte-navigator";
 
-  function onPrev() {
-    prev();
-  }
-
-  function onNext() {
-    next();
-  }
+  export let prevStep;
+  export let nextStep;
+  const location = useLocation()
+  const path = $location.pathname;
+  const screenReader = path.substring(path.lastIndexOf('/'));
 </script>
 
-<nav aria-label="Pagination: next and previous">
-  <ol>
-    <li>
-      <button on:click={onPrev}>Previous</button>
-    </li>
-    <li>
-      <button on:click={onNext}>Next</button>
-    </li>
-  </ol>
-</nav>
+<Router primary={false}>
+  <nav aria-label="Pagination: next and previous">
+    <ol>
+      {#if prevStep != undefined}
+        <li>
+          <Link to={"/" + prevStep + screenReader}>Previous</Link>
+        </li>
+      {/if}
+      {#if nextStep != undefined}
+        <li>
+          <Link to={"/" + nextStep + screenReader}>Next</Link>
+        </li>
+      {/if}
+    </ol>
+  </nav>
+</Router>
