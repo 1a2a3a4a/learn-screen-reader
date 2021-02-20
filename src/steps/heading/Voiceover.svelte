@@ -1,5 +1,4 @@
 <script>
-  import HeadingStep from './HeadingStep.svelte'
 </script>
 
 <style>
@@ -9,5 +8,4 @@
 <!-- markup (zero or more items) goes here -->
 <div>
 Voiceover headings
-<HeadingStep/>
 </div>

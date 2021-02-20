@@ -1,5 +1,4 @@
 <script>
-  import HeadingStep from './HeadingStep.svelte'
 </script>
 
 <style>
@@ -19,5 +18,4 @@
   You can list headings with <code>Shift + F6</code> and use the radio buttons to go the headings
   </li>
 </ul>
-  <HeadingStep/>
 </div>
