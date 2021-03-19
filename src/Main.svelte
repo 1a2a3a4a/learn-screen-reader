@@ -1,11 +1,13 @@
 <script lang="ts">
   import { Router, Route, Link } from "svelte-navigator";
-
+  import { setContext } from 'svelte';
+  import SelectStep from "./steps/SelectStep.svelte";
   import Start from "./steps/Start.svelte";
   import StartScreenReader from "./steps/startScreenReader/StartScreenReader.svelte";
   import Reading from "./steps/Reading/Reading.svelte";
   import Heading from "./steps/heading/Heading.svelte";
   import NotFound from "./NotFound.svelte";
+  import Sitemap from "./Sitemap.svelte";
   import Pagination from "./steps/Pagination.svelte";
   import Landmarks from "./steps/landmarks/Landmarks.svelte";
   import Lists from "./steps/lists/Lists.svelte";
@@ -21,13 +23,16 @@
     { name: "tables", component: Tables },
     { name: "forms", component: Forms },
   ];
+  setContext("paths", paths);
 
 </script>
 
 <main>
   <Router>
     {#each paths as path, index}
+
       <Route path="{path.name}/*">
+        <SelectStep/>
         <svelte:component this={path.component} />
         <Pagination
           prevStep={paths[index - 1]?.name}
@@ -42,6 +47,7 @@
       <Start />
     </Route>
     <Route component={NotFound} />
+    <Route component={Sitemap} />
   </Router>
 </main>
 

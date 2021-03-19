@@ -1,4 +1,4 @@
 export enum ScreenReader {
-  Voiceover,
-  NVDA
+  Voiceover = "Voiceover",
+  NVDA = "NVDA"
 }

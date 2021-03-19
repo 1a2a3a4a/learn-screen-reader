@@ -1,3 +1,6 @@
+<script>
+    import { Link, Router } from "svelte-navigator";
+</script>
 <footer>
   <ul>
     <li>
@@ -6,5 +9,8 @@
     <li>
       Want to join the project? <a href="mail:to">Mail me</a>
     </li>
+    <Router primary={false}>
+        <Link to="/sitemap">Sitemap</Link>
+    </Router>
   </ul>
 </footer>

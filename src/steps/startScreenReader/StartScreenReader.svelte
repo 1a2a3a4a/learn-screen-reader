@@ -9,7 +9,7 @@
 </style>
 
 <div>
-  <h1>Here is how to start your screenreader</h1> 
+  <h1>Starting and stopping</h1> 
   <Router primary={false}>
     <Route path="Voiceover" component="{Voiceover}"/>
     <Route path="NVDA" component="{NVDA}"/>
