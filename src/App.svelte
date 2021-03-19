@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Heading from './Heading.svelte';
+	import Header from './Header.svelte';
 	import Main from './Main.svelte'
 	import Footer from './Footer.svelte'
 </script>
 <div>
-	<Heading/>
+	<Header/>
 	<Main/>
 	<Footer/>
 </div>

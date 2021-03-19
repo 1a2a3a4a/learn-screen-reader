@@ -7,5 +7,5 @@
 
 <!-- markup (zero or more items) goes here -->
 <div>
-<p>Use <code>D</code> to go the next landmark and <code>Shift + D</code> to go to the previous landmark</p>
+<p>Use <kbd>D</kbd> to go the next landmark and <kbd>Shift + D</kbd> to go to the previous landmark</p>
 </div>

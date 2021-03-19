@@ -3,6 +3,7 @@
 
   import Start from "./steps/Start.svelte";
   import StartScreenReader from "./steps/startScreenReader/StartScreenReader.svelte";
+  import Reading from "./steps/Reading/Reading.svelte";
   import Heading from "./steps/heading/Heading.svelte";
   import NotFound from "./NotFound.svelte";
   import Pagination from "./steps/Pagination.svelte";
@@ -13,12 +14,14 @@
 
   const paths = [
     { name: "start", component: StartScreenReader },
+    { name: "reading", component: Reading},
     { name: "heading", component: Heading },
     { name: "landmarks", component: Landmarks },
     { name: "lists", component: Lists },
     { name: "tables", component: Tables },
     { name: "forms", component: Forms },
   ];
+
 </script>
 
 <main>
@@ -30,6 +33,9 @@
           prevStep={paths[index - 1]?.name}
           nextStep={paths[index + 1]?.name}
         />
+        {#if index === paths.length - 1}
+          <Link to={"/"}>Go to start</Link>
+        {/if}
       </Route>
     {/each}
     <Route path="/">

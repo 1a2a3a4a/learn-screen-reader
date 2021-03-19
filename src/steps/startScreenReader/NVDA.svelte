@@ -6,10 +6,10 @@
 </style>
 <!-- markup (zero or more items) goes here -->
 <ul>
-<li>Have you downloaded and installed NVDA? You can download it from their website.</li>
-<li><code>CTRL + ALT + N</code> to start.</li>
-<li>Find the NVDA-modifier key.</li>
-<li>Use <code>NVDA + S</code> to change speech mode. Press it once to stop the voice.</li>
-<li><code>NVDA + Q</code> can be used to quit.</li>
+<li>You can <a href="https://www.nvaccess.org/download/">download NVDA</a> if you have not already</li>
+<li><kbd>CTRL + <kbd>ALT</kbd> + <kbd>N</kbd> to start.</li>
+<li>Find the NVDA-modifier key, it is <kbd>CAPS</kbd> by default.</li>
+<li>Use <kbd>NVDA</kbd> + <kbd>S</kbd> to change speech mode. Press it once to stop the voice and</li>
+<li><kbd>NVDA</kbd> + <kbd>Q</kbd> can be used to quit.</li>
 
 </ul>

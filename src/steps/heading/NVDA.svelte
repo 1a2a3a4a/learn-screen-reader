@@ -9,13 +9,13 @@
 <div>
 <ul>
   <li>
-  Use the <code>H</code> key to navigate to next heading and <code>Shift + H</code> for previous heading.
+  Use the <kbd>H</kbd> key to navigate to next heading and <kbd>Shift + H</kbd> for previous heading.
   </li>
   <li>
   You can also use numbers 1 to 5 to navigate through heading levels 1 to 5. 
   </li>
   <li>
-  You can list headings with <code>Shift + F6</code> and use the radio buttons to go the headings
+  You can list headings with <kbd>Shift + F6</kbd> and use the radio buttons to go the headings
   </li>
 </ul>
 </div>

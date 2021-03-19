@@ -22,6 +22,6 @@
           <Link to={"/" + nextStep + screenReader}>Next</Link>
         </li>
       {/if}
-    </ol>
+    </ol> 
   </nav>
 </Router>
