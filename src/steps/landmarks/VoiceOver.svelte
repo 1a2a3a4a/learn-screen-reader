@@ -7,5 +7,9 @@
 
 <!-- markup (zero or more items) goes here -->
 <div>
-Make sure you have it enabled on your computer and then use <code>CMD + F5</code> to start Voiceover
+  <p>
+    Open the rotor by pressing <kbd>VO</kbd> + <kbd>U</kbd>, then use the
+    <kbd>←</kbd>
+    and <kbd>→</kbd> key to select landmarks.
+  </p>
 </div>
