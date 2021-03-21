@@ -1,7 +1,7 @@
 <script>
     import { Link, Router } from "svelte-navigator";
 </script>
-<footer>
+<footer class="flex justify-center h-40 w-full">
   <ul>
     <li>
       <a href="github.com/1a2a3a4a/learn-screen-reader">Source code on github</a>
