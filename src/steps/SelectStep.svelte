@@ -14,15 +14,21 @@
   }
 </script>
 
-<div>
-  <button on:click={handleClick} aria-haspopup="true" aria-expanded={isExpanded}
-    >Select step</button
-  >
+<div class="relative w-full box-border">
+  <button on:click={handleClick} aria-haspopup="true" aria-expanded={isExpanded}>
+    Select step
+  </button>
   {#if isExpanded}
     <ul>
       {#each paths as path}
-        <li>
+        <li class="flex">
           <Link
+            class="  
+            hover:bg-gray-100 
+            focus:bg-gray-100 
+            px-2 
+            py-1 
+            w-full"
             to="/{path.name}/{screenReader}"
             aria-current={step === path.name ? "page" : ""}>{path.name}</Link
           >
@@ -32,6 +38,22 @@
   {/if}
 </div>
 
-<style>
-  /* your styles go here */
+<style lang="postcss">
+  ul {
+    @apply 
+    mt-0.5
+    list-none
+    absolute
+    w-32
+    bg-white
+    box-border;
+  }
+  button {
+    @apply
+    bg-white
+    hover:bg-gray-100
+    focus:bg-gray-100
+    p-2
+    border-solid;
+  }
 </style>

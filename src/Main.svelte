@@ -28,7 +28,7 @@
   setContext("paths", paths);
 </script>
 
-<main>
+<main class="px-28 w-full">
   <Router>
     {#each paths as path, index}
       <Route path="{path.name}/*">

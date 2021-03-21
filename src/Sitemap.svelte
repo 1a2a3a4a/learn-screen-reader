@@ -11,18 +11,21 @@
 <style>
     /* your styles go here */
 </style>
-<h1>Sitemap</h1>
-<Link to="/">Home</Link>
-<Link to="/sitemap" aria-current="page">Sitemap</Link>
+<div class="flex flex-col">
+    <h1>Sitemap</h1>
+    <Link to="/">Home</Link>
+    <Link to="/sitemap" aria-current="page">Sitemap</Link>
+</div>
 
 {#each screenReaders as screenReader}
-   {screenReader}
+   <h2>{screenReader}</h2>
+   <ul class="pl-8">
     {#each paths as path}
-    <ul>
+    
         <li>
             <Link to="/{path.name}/{screenReader}">{path.name}</Link>
         </li>    
+        {/each}
     </ul>
-    {/each}
-    
+        
 {/each}

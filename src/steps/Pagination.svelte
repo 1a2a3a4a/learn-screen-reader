@@ -9,11 +9,15 @@
   const screenReader = path.substring(path.lastIndexOf('/'));
 </script>
 
+<style lang="postcss">
+
+</style>
+
 <Router primary={false}>
-  <nav aria-label="Pagination: next and previous">
-    <ol>
+  <nav class="my-4" aria-label="Pagination: next and previous">
+    <ul class="flex list-none">
       {#if prevStep != undefined}
-        <li>
+        <li class="mr-4">
           <Link to={"/" + prevStep + screenReader}>Previous</Link>
         </li>
       {/if}
@@ -22,6 +26,6 @@
           <Link to={"/" + nextStep + screenReader}>Next</Link>
         </li>
       {/if}
-    </ol> 
+    </ul> 
   </nav>
 </Router>
