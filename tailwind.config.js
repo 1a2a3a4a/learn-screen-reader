@@ -12,7 +12,11 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+    boxShadow : {
+        kbd: '1px 1px 1px #777'
+      }
+    },
   },
   variants: {
     extend: {},

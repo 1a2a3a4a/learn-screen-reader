@@ -4,7 +4,7 @@
 
 </script>
 
-<header>
+<header class="self-start">
   <Router primary={false}>
       <Link to="/" aria-current={window.location.pathname === "/" ? "page" : ""}>Home</Link>
   </Router> 
