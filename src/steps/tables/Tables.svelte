@@ -10,7 +10,7 @@
     <Route path="Voiceover" component={Voiceover} />
     <Route path="NVDA" component={NVDA} />
   </Router>
-  <table>
+  <table class="mt-4">
     <caption>Teddy bear enthusiasts:</caption>
     <tr>
       <th scope="col">Last Name</th>

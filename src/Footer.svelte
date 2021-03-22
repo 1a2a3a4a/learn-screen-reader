@@ -1,22 +1,28 @@
 <script>
-    import { Link, Router } from "svelte-navigator";
+  import { Link, Router } from "svelte-navigator";
 </script>
-<footer class=" bg-green-300 w-full flex justify-center h-40 w-full">
+
+<footer
+  class="mt-20 bg-green-300 w-full flex justify-center items-center h-40 w-full"
+>
   <ul class="flex list-none">
     <li>
-      <a href="github.com/1a2a3a4a/learn-screen-reader">Source code on github</a>
+      <a target="_blank" href="http://github.com/1a2a3a4a/learn-screen-reader"
+        >Source code on github <span class="sr-only">, Opens in new tab</span
+        ></a
+      >
     </li>
     <li>
-      Want to join the project? <a href="mail:to">Mail me</a>
+      Want to join the project? <a href="mail:to">Send a mail to me</a>
     </li>
     <Router primary={false}>
-        <Link to="/sitemap">Sitemap</Link>
+      <Link to="/sitemap">Sitemap</Link>
     </Router>
   </ul>
 </footer>
+
 <style lang="postcss">
   li {
-    @apply
-    mx-4;
+    @apply mx-4;
   }
 </style>

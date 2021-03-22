@@ -4,28 +4,25 @@
 
   export let prevStep;
   export let nextStep;
-  const location = useLocation()
+  const location = useLocation();
   const path = $location.pathname;
-  const screenReader = path.substring(path.lastIndexOf('/'));
+  const screenReader = path.substring(path.lastIndexOf("/"));
 </script>
 
-<style lang="postcss">
-
-</style>
-
 <Router primary={false}>
-  <nav class="my-4" aria-label="Pagination: next and previous">
-    <ul class="flex list-none">
-      {#if prevStep != undefined}
-        <li class="mr-4">
-          <Link to={"/" + prevStep + screenReader}>Previous</Link>
-        </li>
-      {/if}
-      {#if nextStep != undefined}
-        <li>
-          <Link to={"/" + nextStep + screenReader}>Next</Link>
-        </li>
-      {/if}
-    </ul> 
-  </nav>
+  <ul class="my-4 flex list-none">
+    {#if prevStep != undefined}
+      <li class="mr-4">
+        <Link to={"/" + prevStep + screenReader}>Previous</Link>
+      </li>
+    {/if}
+    {#if nextStep != undefined}
+      <li>
+        <Link to={"/" + nextStep + screenReader}>Next</Link>
+      </li>
+    {/if}
+  </ul>
 </Router>
+
+<style lang="postcss">
+</style>

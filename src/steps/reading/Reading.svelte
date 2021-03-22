@@ -10,5 +10,5 @@
       <Route path="NVDA" component={NVDA} />
     </Router>
     
-    <p>The quick brown fox jumps over the lazy dog</p>
+    <p class="my-4 text-lg">The quick brown fox jumps over the lazy dog</p>
   </div>

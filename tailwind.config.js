@@ -13,8 +13,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-    boxShadow : {
+      boxShadow: {
         kbd: '1px 1px 1px #777'
+      },
+      padding:{
+        contentpadding:'300px'
       }
     },
   },

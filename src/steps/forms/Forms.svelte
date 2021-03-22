@@ -15,17 +15,17 @@
     <Route path="NVDA" component={NVDA} />
   </Router>
 
-  <form id="form1" method="post" action="">
-    <p>
+  <form class="mt-4" id="form1" method="post" action="">
+    <p class="my-2">
       <label for="textfield2">First Name:</label>
-      <input type="text" name="textfield2" id="textfield2" />
+      <input autocomplete="name" type="text" name="textfield2" id="textfield2" />
     </p>
-    <p>
+    <p class="my-2">
       <label for="label">Last Name:</label>
-      <input type="text" name="textfield2" id="label" />
+      <input autocomplete="family-name" type="text" name="textfield2" id="label" />
     </p>
 
-    <fieldset>
+    <fieldset class="my-4 p-2 border-dashed border-black border-2">
       <legend>Choose a car:</legend>
       <br />
       <input id="pt" type="radio" name="radio" value="ptcruiser" />
@@ -37,9 +37,9 @@
       <input id="pinto" type="radio" name="radio" value="pinto" />
       <label for="pinto">Ford Pinto</label>
     </fieldset>
-    <p>
-      <label for="favcity">Which is your favorite city?</label>
-      <select id="favcity" name="select">
+    <p class="my-4 flex flex-col">
+      <label class="my-2" for="favcity">Which is your favorite city?</label>
+      <select class="w-32" id="favcity" name="select">
         <option value="1">Amsterdam</option>
         <option value="3">Interlaken</option>
         <option value="4">Moscow</option>
@@ -48,7 +48,7 @@
       </select>
     </p>
     <p>
-      <input type="submit" value="Submit" />
+      <input class="p-2 mt-2" type="submit" value="Submit" />
     </p>
   </form>
 </div>

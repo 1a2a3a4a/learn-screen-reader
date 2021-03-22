@@ -14,4 +14,3 @@
   <li><kbd>↑</kbd>/<kbd>↓</kbd> or the first letter of an option: Select an option in a combo box</li>
   <li><kbd>Enter</kbd>:Submit a form</li>
 </ul>
-<a href="https://webaim.org/articles/nvda/forms.htm">Further practice</a>

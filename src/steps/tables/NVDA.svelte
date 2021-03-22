@@ -9,7 +9,6 @@
     <kbd>↑</kbd>/<kbd>↓</kbd>/<kbd>←</kbd>/<kbd>→</kbd>. Note that the table
     headings are read for each cell.
   </p>
-  <a href="https://webaim.org/articles/nvda/tables.htm">Further practice</a>
 </div>
 
 <style>
