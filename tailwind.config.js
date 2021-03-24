@@ -21,7 +21,11 @@ module.exports = {
       },
       listStyleType: {
         roman: 'upper-roman',
-      }
+      },
+      minHeight: {
+        'footer': '5rem',
+        
+       }
     },
   },
   variants: {
