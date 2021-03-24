@@ -14,8 +14,8 @@
   <li>
   You can also use numbers 1 to 5 to navigate through heading levels 1 to 5. 
   </li>
-  <p>
-    Open the elements list with <kbd>NVDA</kbd> + <kbd>F7</kbd> and use the radio buttons to go the headings
-  </p>
+  <li>
+    Open the elements list with <kbd>NVDA</kbd> + <kbd>F7</kbd> and use the radio buttons to go the headings.
+  </li>
 </ul>
 </div>

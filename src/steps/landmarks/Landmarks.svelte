@@ -7,16 +7,16 @@
 <div>
   <h1>Landmarks</h1>
 
-  <p>There are some landmarks on this page.</p>
   <Router primary={false}>
     <Route path="Voiceover" component={Voiceover} />
     <Route path="NVDA" component={NVDA} />
   </Router>
-  <div>
-    <section aria-label="First section">This is a section</section>
-    <section aria-label="Second section">This is a section</section>
-    <section aria-label="Third section">This is a section</section>
-    <aside aria-label="aside landmark">This is an aside</aside>
+  
+  <div class="mt-4">
+    <section aria-label="First section">First section</section>
+    <section aria-label="Second section">Second section</section>
+    <section aria-label="Third section">Third section</section>
+    <aside aria-label="aside landmark"> Aside element</aside>
   </div>
 </div>
 

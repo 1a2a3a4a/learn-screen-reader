@@ -37,6 +37,18 @@
       <input id="pinto" type="radio" name="radio" value="pinto" />
       <label for="pinto">Ford Pinto</label>
     </fieldset>
+    <fieldset class="my-4 p-2 border-dashed border-black border-2">
+      <legend>Check one or multiple colors you like</legend>
+      <br />
+      <input id="Blue" type="checkbox" name="checkbox" value="Blue" />
+      <label for="Blue">Blue</label>
+      <br />
+      <input id="Purple" type="checkbox" name="checkbox" value="Purple" />
+      <label for="Purple">Purple</label>
+      <br />
+      <input id="Indigo" type="checkbox" name="checkbox" value="Indigo" />
+      <label for="Indigo">Indigo</label>
+    </fieldset>
     <p class="my-4 flex flex-col">
       <label class="my-2" for="favcity">Which is your favorite city?</label>
       <select class="w-32" id="favcity" name="select">

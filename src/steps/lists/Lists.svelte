@@ -10,12 +10,12 @@
     <Route path="Voiceover" component={Voiceover} />
     <Route path="NVDA" component={NVDA} />
   </Router>
-  <ul>
+  <ul class="mt-4">
     <li>Apple</li>
     <li>Pear</li>
-    <li>orange</li>
+    <li>Orange</li>
   </ul>
-  <ol>
+  <ol class="list-roman">
     <li>One</li>
     <li>Two</li>
     <li>Three</li>

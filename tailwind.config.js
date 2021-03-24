@@ -18,6 +18,9 @@ module.exports = {
       },
       padding:{
         contentpadding:'300px'
+      },
+      listStyleType: {
+        roman: 'upper-roman',
       }
     },
   },
