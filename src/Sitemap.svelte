@@ -12,7 +12,7 @@
     /* your styles go here */
 </style>
 <div class="flex flex-col">
-    <h1>Sitemap</h1>
+    <h1 use:registerFocus>Sitemap</h1>
     <Link to="/">Home</Link>
     <Link to="/sitemap" aria-current="page">Sitemap</Link>
 </div>

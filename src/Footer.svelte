@@ -15,7 +15,7 @@
     <li>
       Want to join the project? <a href="mail:to">Send a mail to me</a>
     </li>
-    <Router primary={false}>
+    <Router>
       <Link to="/sitemap">Sitemap</Link>
     </Router>
   </ul>

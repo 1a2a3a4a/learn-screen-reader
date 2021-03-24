@@ -9,7 +9,7 @@
   const screenReader = path.substring(path.lastIndexOf("/"));
 </script>
 
-<Router primary={false}>
+<Router>
   <ul class="my-4 flex list-none">
     {#if prevStep != undefined}
       <li class="mr-4">

@@ -8,6 +8,6 @@ import { Link } from "svelte-navigator";
 </style>
 
 <!-- markup (zero or more items) goes here -->
-<h1>404 page</h1>
+<h1 use:registerFocus>404 page</h1>
 <p>This is the 404 page</p>
 <Link to="/">Go home</Link>
