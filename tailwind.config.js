@@ -24,7 +24,7 @@ module.exports = {
       },
       minHeight: {
         'footer': '5rem',
-        
+        'full': '100vh'
        },
        colors: {
         primary: 'var(--color-primary)',
