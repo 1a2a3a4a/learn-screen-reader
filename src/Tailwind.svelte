@@ -1,4 +1,14 @@
 <style global lang="postcss">
+
+    :root {
+    --color-primary: #dbad6a;
+    --color-secondary: #cf995f;
+    --color-third: #96897b;
+    --color-light: #d0ce7c;
+    --color-dark: #628395;
+    --color-link: #0e3a6d;
+    }
+
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
@@ -47,14 +57,14 @@
             @apply
             focus:outline-none 
             focus:ring 
-            focus:border-blue-300;
+            focus:border-dark;
         }
 
         a {
             @apply 
-            underline 
-            text-blue-400
-            hover:text-red-400;
+            underline
+            text-link
+            hover:text-dark;
         }
 
         kbd {

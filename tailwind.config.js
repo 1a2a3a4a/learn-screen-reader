@@ -25,11 +25,21 @@ module.exports = {
       minHeight: {
         'footer': '5rem',
         
-       }
+       },
+       colors: {
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+        third: 'var(--color-third)',
+        dark: 'var(--color-dark)',
+        light:'var(--color-light)',
+        link: 'var(--color-link)',
+      }
     },
   },
   variants: {
-    extend: {},
+       extend: {
+        backgroundColor: ['hover', 'focus'],
+      }
   },
   plugins: [],
 }

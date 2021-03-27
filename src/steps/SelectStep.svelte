@@ -15,7 +15,14 @@
 </script>
 
 <div class="relative w-full box-border">
-  <button on:click={handleClick} aria-haspopup="true" aria-expanded={isExpanded}>
+  <button class=" bg-white
+  hover:bg-secondary
+  focus:bg-secondary
+  p-2
+  border-4
+  border-gray-900
+  border-solid" 
+    on:click={handleClick} aria-haspopup="true" aria-expanded={isExpanded}>
     Select step
   </button>
   {#if isExpanded}
@@ -23,12 +30,12 @@
       {#each paths as path}
         <li class="flex">
           <Link
-            class="  
-            hover:bg-gray-100 
-            focus:bg-gray-100 
+            class=" 
             px-2 
             py-1 
-            w-full"
+            w-full
+            focus:bg-gray-100
+            "
             to="/{path.name}/{screenReader}"
             aria-current={step === path.name ? "page" : ""}>{path.name}</Link
           >
@@ -47,16 +54,5 @@
     w-32
     bg-white
     box-border;
-  }
-  button {
-    @apply
-    bg-white
-    hover:bg-gray-100
-    focus:bg-gray-100
-    p-2
-    border-4
-    border-gray-900
-    border-solid;
-
   }
 </style>

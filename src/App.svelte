@@ -4,7 +4,7 @@
 	import Main from './Main.svelte';
 	import Footer from './Footer.svelte';
 </script>
-<div class="flex flex-col justify-between bg-green-100 h-screen">
+<div class="flex flex-col justify-between bg-primary h-full">
 	<Tailwind/>
 	<div class="flex flex-col content-center items-center">
 		<Header/>

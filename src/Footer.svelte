@@ -3,7 +3,7 @@
 </script>
 
 <footer
-  class="min-h-footer bg-green-300 w-full flex justify-center items-center h-40 w-full"
+  class="min-h-footer bg-third w-full flex justify-center items-center h-40 w-full"
 >
   <ul class="flex list-none">
     <li>
