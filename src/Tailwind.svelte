@@ -5,6 +5,11 @@
 	
 	@layer base {
        
+        p {
+            @apply
+            my-4
+        }
+
         h1 {
             @apply 
             text-3xl

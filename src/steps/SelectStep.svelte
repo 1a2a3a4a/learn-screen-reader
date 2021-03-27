@@ -54,6 +54,9 @@
     hover:bg-gray-100
     focus:bg-gray-100
     p-2
+    border-4
+    border-gray-900
     border-solid;
+
   }
 </style>

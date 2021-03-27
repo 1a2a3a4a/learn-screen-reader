@@ -6,6 +6,6 @@
 </style>
 
 <!-- markup (zero or more items) goes here -->
-<div>
-Forms
-</div>
+<p>
+Here you can practice on a well labelled form.
+</p>

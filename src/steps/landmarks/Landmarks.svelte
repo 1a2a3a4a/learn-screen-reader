@@ -15,10 +15,10 @@
   </Router>
 
   <div class="mt-4">
-    <section aria-label="First section">First section</section>
-    <section aria-label="Second section">Second section</section>
-    <section aria-label="Third section">Third section</section>
-    <aside aria-label="aside landmark"> Aside element</aside>
+    <section aria-label="First section"><div>First section</div></section>
+    <section aria-label="Second section"><div>Second section</div></section>
+    <section aria-label="Third section"><div>Third section</div></section>
+    <aside aria-label="Aside">Aside element</aside>
   </div>
 </div>
 
