@@ -4,7 +4,7 @@
   import SelectStep from "./steps/SelectStep.svelte";
   import Start from "./steps/Start.svelte";
   import StartScreenReader from "./steps/startScreenReader/StartScreenReader.svelte";
-  import Reading from "./steps/Reading/Reading.svelte";
+  import Reading from "./steps/reading/Reading.svelte";
   import Heading from "./steps/heading/Heading.svelte";
   import NotFound from "./NotFound.svelte";
   import Sitemap from "./Sitemap.svelte";
