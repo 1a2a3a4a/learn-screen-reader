@@ -53,6 +53,13 @@
     absolute
     w-32
     bg-white
-    box-border;
+    box-border
+    bottom-0
+    left-24
+    border-4
+  border-gray-900
+  border-solid
+    md:inset-auto
+    ;
   }
 </style>
