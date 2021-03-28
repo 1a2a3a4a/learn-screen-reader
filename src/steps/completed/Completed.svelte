@@ -30,4 +30,10 @@
 
 <style>
   /* your styles go here */
+  h2 {
+    @apply mb-4;
+  }
+  ul {
+    @apply mb-4;
+  }
 </style>

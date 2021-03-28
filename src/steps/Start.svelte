@@ -12,7 +12,7 @@
 <div>
   <h1 use:registerFocus>Which screen reader are you using?</h1>
   <ul>
-    <li><Link to="start/{ScreenReader.Voiceover}">Voiceover</Link></li>
-    <li><Link to="start/{ScreenReader.NVDA}">NVDA</Link></li>
+    <li><Link class="text-2xl" to="start/{ScreenReader.Voiceover}">Voiceover</Link></li>
+    <li><Link class="text-2xl" to="start/{ScreenReader.NVDA}">NVDA</Link></li>
   </ul>
 </div>

@@ -39,7 +39,7 @@
             nextStep={paths[index + 1]?.name}
           />
           {#if index === paths.length - 1}
-            <Link class="my-4" to={"/"}>Go to start</Link>
+            <Link class="block my-4" to={"/"}>Go to start</Link>
           {/if}
           <SelectStep />
         </nav>

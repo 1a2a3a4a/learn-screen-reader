@@ -4,7 +4,7 @@
 
 <header class=" w-full pt-4 mb-4 bg-dark  h-14 self-start">
   <Router>
-      <Link class="text-light hover:text-blue-300 ml-12" to="/" aria-current={window.location.pathname === "/" ? "page" : ""}>Home</Link>
+      <Link class="text-white hover:text-blue-100 ml-12" to="/" aria-current={window.location.pathname === "/" ? "page" : ""}>Home</Link>
   </Router> 
 </header>
 
