@@ -57,8 +57,8 @@
     bottom-0
     left-24
     border-4
-  border-gray-900
-  border-solid
+    border-gray-900
+    border-solid
     md:inset-auto
     ;
   }
