@@ -6,27 +6,60 @@
   const location = useLocation();
   const currentPath = $location.pathname;
   const screenReader = currentPath.substring(currentPath.lastIndexOf("/"));
-  const step = currentPath.substring(currentPath.indexOf("/") + 1, currentPath.lastIndexOf("/"));
+  const step = currentPath.substring(
+    currentPath.indexOf("/") + 1,
+    currentPath.lastIndexOf("/")
+  );
   var paths = getContext("paths");
   let isExpanded = false;
+  let selectStepButtonElement;
+
   function handleClick() {
     isExpanded = !isExpanded;
   }
+  
+  function clickOutside(node, onEventFunction) {
+    const handleClick = (event) => {
+      var path = event.composedPath();
+      if (!path.includes(node) && !path.includes(selectStepButtonElement)) {
+        onEventFunction();
+      }
+    };
+
+    document.addEventListener("click", handleClick);
+
+    return {
+      destroy() {
+        document.removeEventListener("click", handleClick);
+      },
+    };
+  }
+  function handleKeydown(event) {
+    if (event.key === "Escape") {
+      isExpanded = false;
+    }
+  }
 </script>
 
+<svelte:window on:keydown={handleKeydown} />
 <div class="relative w-full box-border">
-  <button class=" bg-white
+  <button
+    bind:this={selectStepButtonElement}
+    class=" bg-white
   hover:bg-secondary
   focus:bg-secondary
   p-2
   border-4
   border-gray-900
-  border-solid" 
-    on:click={handleClick} aria-haspopup="true" aria-expanded={isExpanded}>
+  border-solid"
+    on:click={handleClick}
+    aria-haspopup="true"
+    aria-expanded={isExpanded}
+  >
     Select step
   </button>
   {#if isExpanded}
-    <ul>
+    <ul use:clickOutside={handleClick}>
       {#each paths as path}
         <li class="flex">
           <Link
@@ -47,8 +80,7 @@
 
 <style lang="postcss">
   ul {
-    @apply 
-    mt-0.5
+    @apply mt-0.5
     list-none
     absolute
     w-32
@@ -59,7 +91,6 @@
     border-4
     border-gray-900
     border-solid
-    md:inset-auto
-    ;
+    md:inset-auto;
   }
 </style>
