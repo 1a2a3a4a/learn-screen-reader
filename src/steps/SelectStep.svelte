@@ -59,7 +59,7 @@
     Select step
   </button>
   {#if isExpanded}
-    <ul use:clickOutside={handleClick}>
+    <ul use:clickOutside={handleClick} class="p-1">
       {#each paths as path}
         <li class="flex">
           <Link
