@@ -57,7 +57,8 @@
             @apply
             focus:outline-none 
             focus:ring 
-            focus:border-dark;
+            focus:border-dark
+            ;
         }
 
         a {
