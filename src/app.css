@@ -1,0 +1,71 @@
+:root {
+	--color-primary: #dbad6a;
+	--color-secondary: #cf995f;
+	--color-third: #96897b;
+	--color-light: #d0ce7c;
+	--color-dark: #628395;
+	--color-link: #0e3a6d;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	p {
+		@apply my-4;
+	}
+
+	h1 {
+		@apply text-3xl
+            mb-4;
+	}
+
+	h2 {
+		@apply text-2xl;
+	}
+
+	h3 {
+		@apply text-xl;
+	}
+
+	h4 {
+		@apply text-lg;
+	}
+
+	ul,
+	ol {
+		@apply list-disc;
+	}
+
+	a[href]:not([tabindex='-1']),
+	area[href]:not([tabindex='-1']),
+	input:not([disabled]):not([tabindex='-1']),
+	select:not([disabled]):not([tabindex='-1']),
+	textarea:not([disabled]):not([tabindex='-1']),
+	button:not([disabled]):not([tabindex='-1']),
+	iframe:not([tabindex='-1']),
+	[tabindex]:not([tabindex='-1']),
+	[contentEditable='true']:not([tabindex='-1']) {
+		@apply focus:outline-none 
+            focus:ring 
+            focus:border-dark;
+	}
+
+	a {
+		@apply underline
+            text-link
+            hover:text-dark;
+	}
+
+	kbd {
+		@apply bg-white
+            rounded
+            px-1
+            shadow-kbd
+            m-1
+            text-lg
+            font-bold
+            tracking-wide;
+	}
+}
